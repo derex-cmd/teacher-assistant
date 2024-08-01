@@ -1,0 +1,301 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{50173852-E027-400A-B694-697E142AC1DB}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project_Web</RootNamespace>
+    <AssemblyName>Project Web</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44334</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DataVisualization" />
+    <Reference Include="System.Web.DataVisualization.Design" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AddLD.aspx" />
+    <Content Include="AddTA.aspx" />
+    <Content Include="AdminView.aspx" />
+    <Content Include="AdminViewList.aspx" />
+    <Content Include="DeleteLD.aspx" />
+    <Content Include="DeleteTA.aspx" />
+    <Content Include="Faculty.aspx" />
+    <Content Include="Feedback.aspx" />
+    <Content Include="HomePage.aspx" />
+    <Content Include="HomePage.html" />
+    <Content Include="FacultyView.aspx" />
+    <Content Include="LDView.aspx" />
+    <Content Include="MostFacultyTask.aspx" />
+    <Content Include="PaymentView.aspx" />
+    <Content Include="TaskListforTA.aspx" />
+    <Content Include="TAView.aspx" />
+    <Content Include="ViewAttendanceforLD.aspx" />
+    <Content Include="ViewLD.aspx" />
+    <Content Include="ViewLDbyFaculty.aspx" />
+    <Content Include="ViewTA.aspx" />
+    <Content Include="ViewTAbyFaculty.aspx" />
+    <Content Include="ViewTasksforTA.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="WebForm1.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddLD.aspx.cs">
+      <DependentUpon>AddLD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddLD.aspx.designer.cs">
+      <DependentUpon>AddLD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddTA.aspx.cs">
+      <DependentUpon>AddTA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddTA.aspx.designer.cs">
+      <DependentUpon>AddTA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminView.aspx.cs">
+      <DependentUpon>AdminView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminView.aspx.designer.cs">
+      <DependentUpon>AdminView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdminViewList.aspx.cs">
+      <DependentUpon>AdminViewList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdminViewList.aspx.designer.cs">
+      <DependentUpon>AdminViewList.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteLD.aspx.cs">
+      <DependentUpon>DeleteLD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteLD.aspx.designer.cs">
+      <DependentUpon>DeleteLD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteTA.aspx.cs">
+      <DependentUpon>DeleteTA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeleteTA.aspx.designer.cs">
+      <DependentUpon>DeleteTA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Faculty.aspx.cs">
+      <DependentUpon>Faculty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Faculty.aspx.designer.cs">
+      <DependentUpon>Faculty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.aspx.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Feedback.aspx.designer.cs">
+      <DependentUpon>Feedback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.aspx.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HomePage.aspx.designer.cs">
+      <DependentUpon>HomePage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="LDView.aspx.cs">
+      <DependentUpon>LDView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LDView.aspx.designer.cs">
+      <DependentUpon>LDView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MostFacultyTask.aspx.cs">
+      <DependentUpon>MostFacultyTask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MostFacultyTask.aspx.designer.cs">
+      <DependentUpon>MostFacultyTask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PaymentView.aspx.cs">
+      <DependentUpon>PaymentView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PaymentView.aspx.designer.cs">
+      <DependentUpon>PaymentView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FacultyView.aspx.cs">
+      <DependentUpon>FacultyView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FacultyView.aspx.designer.cs">
+      <DependentUpon>FacultyView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TaskListforTA.aspx.cs">
+      <DependentUpon>TaskListforTA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TaskListforTA.aspx.designer.cs">
+      <DependentUpon>TaskListforTA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TAView.aspx.cs">
+      <DependentUpon>TAView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TAView.aspx.designer.cs">
+      <DependentUpon>TAView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewAttendanceforLD.aspx.cs">
+      <DependentUpon>ViewAttendanceforLD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewAttendanceforLD.aspx.designer.cs">
+      <DependentUpon>ViewAttendanceforLD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLD.aspx.cs">
+      <DependentUpon>ViewLD.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewLD.aspx.designer.cs">
+      <DependentUpon>ViewLD.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewLDbyFaculty.aspx.cs">
+      <DependentUpon>ViewLDbyFaculty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewLDbyFaculty.aspx.designer.cs">
+      <DependentUpon>ViewLDbyFaculty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTA.aspx.cs">
+      <DependentUpon>ViewTA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewTA.aspx.designer.cs">
+      <DependentUpon>ViewTA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTAbyFaculty.aspx.cs">
+      <DependentUpon>ViewTAbyFaculty.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewTAbyFaculty.aspx.designer.cs">
+      <DependentUpon>ViewTAbyFaculty.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewTasksforTA.aspx.cs">
+      <DependentUpon>ViewTasksforTA.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewTasksforTA.aspx.designer.cs">
+      <DependentUpon>ViewTasksforTA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>57800</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44334/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
